@@ -1,0 +1,23 @@
+{
+  "brand": "Diego Solís — Software & Data",
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "data": "Datos",
+    "contact": "Contacto",
+    "resumes": "CVs"
+  },
+  "hero_hi": "Hola, soy Diego 👋",
+  "hero_title": "Ingeniero de Software y Datos Jr.",
+  "hero_sub": "Backend (Python/Java), SQL, Datos (Pandas) y React.",
+  "cta_projects": "Ver Proyectos",
+  "cta_contact": "Contáctame",
+  "about_text": "Associate en Ciencias de la Computación (Vancouver, BC). Me gusta construir backends y extraer insights de datos. Bilingüe (EN/ES).",
+  "resumes": {
+    "data": "CV — Análisis de Datos",
+    "software": "CV — Ingeniería de Software"
+  },
+  "download": "Descargar"
+}
