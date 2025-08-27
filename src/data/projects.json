@@ -1,0 +1,14 @@
+[
+  {
+    "title": "MatchMate — Multiplayer Matchmaking Backend",
+    "description": "Python + MySQL + Docker. REST API para matchmaking, persistencia y rating.",
+    "tags": ["Python","MySQL","Docker","REST API"],
+    "links": { "github": "https://github.com/<tu-usuario>/matchmate" }
+  },
+  {
+    "title": "Portfolio Website",
+    "description": "React + Tailwind + Vite. Sitio responsivo para proyectos y skills.",
+    "tags": ["React","Tailwind","Vite"],
+    "links": { "github": "https://github.com/<tu-usuario>/diego-portfolio" }
+  }
+]

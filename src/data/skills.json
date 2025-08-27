@@ -1,0 +1,7 @@
+{
+  "languages": ["Python","Java","JavaScript","SQL","C"],
+  "frameworks": ["React","Flask","Django (learning)","Spring Boot (basics)","Tailwind"],
+  "databases": ["MySQL","PostgreSQL"],
+  "data": ["Pandas","NumPy","Matplotlib","Jupyter"],
+  "tools": ["Git","GitHub","Docker","Vite","VSCode"]
+}
