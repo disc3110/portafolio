@@ -11,10 +11,8 @@ export default function DataShowcase() {
 
   return (
     <Section id="data" title="Data">
-      <p className="opacity-80 mb-6">
-         (JSON → chart)
-      </p>
-      <div className="h-80 w-full">
+      <p className="opacity-80 mb-6">EDA quick demo (JSON → chart). Replace with your own export.</p>
+      <div className="h-64 sm:h-72 md:h-80 w-full">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart data={data}>
             <CartesianGrid strokeDasharray="3 3" />

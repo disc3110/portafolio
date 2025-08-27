@@ -16,7 +16,7 @@ export default function Skills() {
 
   return (
     <Section id="skills" title="Skills">
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid gap-4 sm:gap-6 grid-cols-1 sm:grid-cols-2">
         {Object.entries(skills).map(([group, list]) => (
           <div key={group}>
             <h3 className="font-semibold capitalize">{group}</h3>

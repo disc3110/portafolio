@@ -3,14 +3,8 @@ import es from './es.json'
 import { createContext, useContext, useMemo, useState } from 'react'
 
 const dict = { en, es }
+const LangContext = createContext({})
 
-const LangContext = createContext({
-  lang: 'en',
-  t: en,
-  setLang: () => {}
-})
-
-// Provider component
 export function LangProvider({ children }) {
   const [lang, setLang] = useState('en')
   const value = useMemo(() => ({ lang, t: dict[lang], setLang }), [lang])

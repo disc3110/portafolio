@@ -3,3 +3,5 @@
 @tailwind utilities;
 
 html { scroll-behavior: smooth; }
+@media (max-width: 640px) { :root { --container-pad: 1rem; } }
+@layer base { img, video, canvas, svg { max-width: 100%; height: auto; } }
