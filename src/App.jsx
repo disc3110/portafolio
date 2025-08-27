@@ -12,9 +12,9 @@ import { Routes, Route } from 'react-router-dom'
 
 export default function App() {
   return (
-    <div className="bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
+    <div className="min-h-screen flex flex-col bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
       <Navbar />
-      <main>
+      <main className='flex-1'>
         <Routes>
           <Route
             path="/"

@@ -54,7 +54,7 @@ export default function Contact() {
       {sent && <p className="mb-4 text-green-600">Message sent. Thank you!</p>}
       {error && <p className="mb-4 text-red-600">{error}</p>}
 
-      <form ref={formRef} onSubmit={onSubmit} className="max-w-xl grid gap-4">
+      <div className="flex justify-center"><form ref={formRef} onSubmit={onSubmit} className="w-full max-w-lg grid gap-4">
         {/* Honeypot invisible (anti-bots) */}
         <input
           type="text"
@@ -83,7 +83,7 @@ export default function Contact() {
         <button disabled={loading} className="px-5 py-2 border rounded-xl">
           {loading ? 'Sending…' : 'Send'}
         </button>
-      </form>
+      </form></div>
     </Section>
   )
 }
