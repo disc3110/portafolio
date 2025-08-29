@@ -11,6 +11,9 @@ export default function Home() {
         <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
           <a href="#projects" className="w-full sm:w-auto px-5 py-2 border rounded-xl">{t.cta_projects}</a>
           <a href="#contact"  className="w-full sm:w-auto px-5 py-2 border rounded-xl">{t.cta_contact}</a>
+          <a href="/resumes" className="w-full sm:w-auto px-5 py-2 border rounded-xl">
+            {t.nav?.resumes || 'Resume'}
+          </a>
         </div>
       </div>
     </div>

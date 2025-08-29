@@ -3,23 +3,23 @@ import ProjectCard from '../components/ProjectCard'
 
 const projects = [
   {
+    title: 'Airbnb Market Analysis — Vancouver',
+    description: 'Data analysis project using Python (Pandas, Matplotlib, Seaborn) and PostgreSQL. Performed EDA, visualization, and insights on Airbnb market trends in Vancouver.',
+    tags: ['Python','Pandas','PostgreSQL','Matplotlib','Data Analysis'],
+    links: { github: 'https://github.com/disc3110/airbnb-market-analysis' }
+  },
+  {
     title: 'MatchMate — Multiplayer Matchmaking Backend',
-    description: 'Python + MySQL + Docker. REST API para matchmaking, persistencia y rating.',
+    description: 'Backend system built with Python and MySQL to handle matchmaking, persistence, and rating logic. Includes REST API endpoints and optional Docker/Kubernetes setup.',
     tags: ['Python','MySQL','Docker','REST API'],
-    links: { github: 'https://github.com/<tu-usuario>/matchmate' }
+    links: { github: 'https://github.com/disc3110/matchmate' }
   },
   {
-    title: 'Portfolio Website',
-    description: 'React + Tailwind + Vite. Sitio limpio y responsivo para mostrar proyectos y skills.',
+    title: 'Personal Portfolio Website',
+    description: 'Responsive personal portfolio built with React, Vite, and Tailwind CSS. Includes bilingual support (EN/ES), dark/light mode, and PDF resume downloads.',
     tags: ['React','Tailwind','Vite'],
-    links: { github: 'https://github.com/<tu-usuario>/diego-portfolio' }
+    links: { github: 'https://github.com/disc3110/portfolio' }
   },
-  {
-    title: 'Dataset Analysis — EDA & Viz',
-    description: 'Python (Pandas/Matplotlib). Limpieza, EDA y gráficas; notebook en GitHub.',
-    tags: ['Python','Pandas','Matplotlib','EDA'],
-    links: { github: 'https://github.com/<tu-usuario>/eda-demo' }
-  }
 ]
 
 export default function Projects() {
