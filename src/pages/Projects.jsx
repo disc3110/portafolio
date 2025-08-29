@@ -18,7 +18,7 @@ const projects = [
     title: 'Personal Portfolio Website',
     description: 'Responsive personal portfolio built with React, Vite, and Tailwind CSS. Includes bilingual support (EN/ES), dark/light mode, and PDF resume downloads.',
     tags: ['React','Tailwind','Vite'],
-    links: { github: 'https://github.com/disc3110/portfolio' }
+    links: { github: 'https://github.com/disc3110/portafolio' }
   },
 ]
 
