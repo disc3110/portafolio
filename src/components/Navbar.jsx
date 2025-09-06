@@ -8,6 +8,8 @@ export default function Navbar() {
   const [dark, setDark] = useState(false)
   const { t } = useT()
   const { pathname } = useLocation()
+  const isHome = pathname === '/'
+  const sectionHref = (id) => (isHome ? `#${id}` : `/#${id}`)
 
   useEffect(() => {
     const root = document.documentElement
@@ -25,12 +27,16 @@ export default function Navbar() {
 
         <div className="hidden md:flex items-center gap-4">
           <Link className={isActive('/')} to="/">{t.nav.home}</Link>
-          <a href="#about" className="hover:underline">{t.nav.about}</a>
-          <a href="#projects" className="hover:underline">{t.nav.projects}</a>
-          <a href="#skills" className="hover:underline">{t.nav.skills}</a>
-          <a href="#data" className="hover:underline">{t.nav.data}</a>
+          {isHome && (
+            <>
+              <a href={sectionHref('about')} className="hover:underline">{t.nav.about}</a>
+              <a href={sectionHref('projects')} className="hover:underline">{t.nav.projects}</a>
+              <a href={sectionHref('skills')} className="hover:underline">{t.nav.skills}</a>
+              <a href={sectionHref('data')} className="hover:underline">{t.nav.data}</a>
+            </>
+          )}
           <Link className={isActive('/resumes')} to="/resumes">{t.nav.resumes}</Link>
-          <a href="#contact" className="hover:underline">{t.nav.contact}</a>
+          <a href={sectionHref('contact')} className="hover:underline">{t.nav.contact}</a>
           <button onClick={() => setDark(d => !d)} className="px-3 py-1 border rounded-md" aria-pressed={dark}>
             {dark ? 'Light' : 'Dark'}
           </button>
@@ -43,12 +49,16 @@ export default function Navbar() {
       {open && (
         <div className="md:hidden border-t px-4 py-3 flex flex-col gap-3 bg-white dark:bg-zinc-900">
           <Link to="/">{t.nav.home}</Link>
-          <a href="#about">{t.nav.about}</a>
-          <a href="#projects">{t.nav.projects}</a>
-          <a href="#skills">{t.nav.skills}</a>
-          <a href="#data">{t.nav.data}</a>
+          {isHome && (
+            <>
+              <a href={sectionHref('about')}>{t.nav.about}</a>
+              <a href={sectionHref('projects')}>{t.nav.projects}</a>
+              <a href={sectionHref('skills')}>{t.nav.skills}</a>
+              <a href={sectionHref('data')}>{t.nav.data}</a>
+            </>
+          )}
           <Link to="/resumes">{t.nav.resumes}</Link>
-          <a href="#contact">{t.nav.contact}</a>
+          <a href={sectionHref('contact')}>{t.nav.contact}</a>
           <div className="flex gap-3">
             <button onClick={() => setDark(d => !d)} className="px-3 py-1 border rounded-md">{dark ? 'Light' : 'Dark'}</button>
             <LanguageToggle />
