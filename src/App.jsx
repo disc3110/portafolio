@@ -9,6 +9,7 @@ import ResumesHub from './pages/ResumesHub'
 import ResumeData from './pages/ResumeData'
 import ResumeSoftware from './pages/ResumeSoftware'
 import { Routes, Route } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 
 export default function App() {
   return (
@@ -38,6 +39,7 @@ export default function App() {
       <footer className="border-t py-10 text-center opacity-70">
         © {new Date().getFullYear()} Diego Solís — All rights reserved.
       </footer>
+      <Analytics />
     </div>
   )
 }
