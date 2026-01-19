@@ -1,7 +1,8 @@
 [
-  { "label": "Python", "value": 9 },
-  { "label": "Java", "value": 8 },
-  { "label": "JavaScript", "value": 7 },
+  { "label": "Python", "value": 8 },
+  { "label": "Java", "value": 9 },
+  { "label": "JavaScript", "value": 9 },
   { "label": "SQL", "value": 8 },
-  { "label": "React", "value": 7 }
+  { "label": "React", "value": 8 },
+  { "label": "Node.js", "value": 9 }
 ]
