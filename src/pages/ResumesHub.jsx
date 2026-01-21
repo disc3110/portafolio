@@ -10,9 +10,6 @@ export default function ResumesHub() {
         {t.nav?.resumes ? 'Choose a resume to view or download:' : 'Choose a resume to view or download:'}
       </p>
       <div className="flex flex-wrap gap-4">
-        <Link className="px-4 py-2 border rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800" to="/resumes/data">
-          {t.resumes?.data || 'Resume — Data Analysis'}
-        </Link>
         <Link className="px-4 py-2 border rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800" to="/resumes/software">
           {t.resumes?.software || 'Resume — Software Engineering'}
         </Link>

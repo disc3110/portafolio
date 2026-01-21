@@ -27,10 +27,10 @@ export default function ResumeSoftware() {
       <div className="mt-8">
         <h3 className="font-semibold mb-2">{lang === 'es' ? 'Puntos Clave' : 'Highlights'}</h3>
         <ul className="list-disc pl-6 space-y-1 text-sm opacity-90">
-          <li>Backend: Python (Flask/Django basics), Java (Spring Boot basics), REST APIs</li>
-          <li>Databases: MySQL, PostgreSQL; schema design &amp; SQL queries</li>
-          <li>Tooling: Git/GitHub, Docker, Vite, CI basics</li>
-          <li>Frontend: React + Tailwind (component-driven, responsive UI)</li>
+          <li>Backend: Node.js & Express; RESTful API design, authentication, MVC architecture</li>
+          <li>Databases: PostgreSQL & MySQL; relational schema design, joins, and optimized SQL queries</li>
+          <li>Frontend: React + TailwindCSS; reusable components, responsive layouts, accessibility basics</li>
+          <li>Tooling & Workflow: Git/GitHub, Docker (basics), environment variables, CI/CD fundamentals</li>
         </ul>
       </div>
     </Section>
