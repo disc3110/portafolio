@@ -121,7 +121,7 @@ export default function DataShowcase() {
             <BarChart data={data}>
               <CartesianGrid strokeDasharray="3 3" stroke={isDark ? '#555' : '#ccc'} />
               <XAxis dataKey="label" stroke={isDark ? '#ccc' : '#333'} />
-              <YAxis stroke={isDark ? '#ccc' : '#333'} />
+              <YAxis stroke={isDark ? '#ccc' : '#333'} domain={[0, 10]}  allowDecimals={false}/>
               <Tooltip
                 contentStyle={{
                   background: isDark ? '#1f2937' : '#fff',

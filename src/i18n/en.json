@@ -10,11 +10,11 @@
     "resumes": "Resumes"
   },
   "hero_hi": "Hi, I’m Diego 👋",
-  "hero_title": "Junior Software & Data Engineer",
-  "hero_sub": "Backend (Node.js/Python/Java), SQL, Data (Pandas), and React.",
+  "hero_title": "Software Developer (Backend / Full-Stack)",
+  "hero_sub": "Backend-focused Software Developer building full-stack web apps with Node.js, PostgreSQL, and modern frontend tools.",
   "cta_projects": "View Projects",
   "cta_contact": "Contact Me",
-  "about_text": "I hold an Associate Degree in Computer Science from Vancouver, BC. I am passionate about building backend systems, working with databases, and finding meaningful insights from data. I enjoy solving problems with code, continuously learning new tools, and I bring value by being bilingual (EN/ES) and adaptable in diverse teams.",
+  "about_text": "I hold an Associate Degree in Computer Science in Vancouver, BC. I focus on building backend and full-stack web applications, working with databases, and designing clean, maintainable systems. I enjoy solving real-world problems with code, continuously learning new technologies, and collaborating in diverse teams. I bring additional value as a bilingual developer (English/Spanish) with strong communication skills.",
   "resumes": {
     "data": "Resume — Data Analysis",
     "software": "Resume — Software Engineering"

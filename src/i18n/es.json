@@ -10,11 +10,11 @@
     "resumes": "CVs"
   },
   "hero_hi": "Hola, soy Diego 👋",
-  "hero_title": "Ingeniero de Software y Datos Jr.",
-  "hero_sub": "Backend (Python/Java), SQL, Datos (Pandas) y React.",
+  "hero_title": "Ingeniero de Software (Backend / Full-Stack).",
+  "hero_sub": "Desarrollador de Software enfocado en backend, construyendo aplicaciones web full‑stack con Node.js, PostgreSQL y herramientas modernas de frontend.",
   "cta_projects": "Ver Proyectos",
   "cta_contact": "Contáctame",
-  "about_text": "Soy egresado de un Associate en Ciencias de la Computación en Vancouver, BC. Me apasiona construir sistemas backend, trabajar con bases de datos y encontrar información valiosa a partir de los datos. Disfruto resolver problemas con código, aprender continuamente nuevas herramientas y aportar valor siendo bilingüe (ES/EN) y adaptable en equipos diversos.",
+  "about_text": "Soy egresado de un Associate en Ciencias de la Computación en Vancouver, BC. Me enfoco en construir aplicaciones web backend y full‑stack, trabajar con bases de datos y diseñar sistemas limpios y mantenibles. Disfruto resolver problemas reales con código, aprender continuamente nuevas tecnologías y colaborar en equipos diversos. Aporto valor adicional como desarrollador bilingüe (Español/Inglés) con sólidas habilidades de comunicación.",
   "resumes": {
     "data": "CV — Análisis de Datos",
     "software": "CV — Ingeniería de Software"
