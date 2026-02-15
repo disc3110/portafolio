@@ -1,6 +1,0 @@
-[
-  { "label": "Backend (Node/Java)", "value": 8 },
-  { "label": "Databases (MySQL/Postgres)", "value": 6 },
-  { "label": "Frontend (React/Tailwind)", "value": 7 },
-  { "label": "Data Analysis (Pandas/SQL)", "value": 4 }
-]

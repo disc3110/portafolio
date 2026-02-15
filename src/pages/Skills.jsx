@@ -1,31 +1,37 @@
-import Section from '../components/Section'
-import SkillPill from '../components/SkillPill'
-import { useEffect, useState } from 'react'
+import Section from "../components/Section";
+import SkillCard from "../components/SkillCard";
+import {
+  frontendSkills,
+  backendSkills,
+  miscSkills,
+} from "../data/skills";
 
 export default function Skills() {
-  const [skills, setSkills] = useState(null)
-
-  useEffect(() => {
-    fetch('/data/skills.json')
-      .then(r => r.json())
-      .then(setSkills)
-      .catch(() => setSkills(null))
-  }, [])
-
-  if (!skills) return <Section id="skills" title="Skills"><p>Loading…</p></Section>
 
   return (
-    <Section id="skills" title="Skills">
-      <div className="grid gap-4 sm:gap-6 grid-cols-1 sm:grid-cols-2">
-        {Object.entries(skills).map(([group, list]) => (
-          <div key={group}>
-            <h3 className="font-semibold capitalize">{group}</h3>
-            <div className="mt-3 flex flex-wrap gap-2">
-              {list.map(s => <SkillPill key={s} label={s} />)}
-            </div>
-          </div>
-        ))}
+     <Section id="skills" title="Skills">
+      <div className="grid gap-10 lg:gap-12 md:grid-cols-3">
+        <div className="flex flex-col items-center">
+          <h3 className="text-xl sm:text-2xl dark:font-light tracking-wide mb-6 dark:text-[#E6E0D4] font-bold">
+            Front-end
+          </h3>
+          <SkillCard title="" skills={frontendSkills} />
+        </div>
+
+        <div className="flex flex-col items-center">
+          <h3 className="text-xl sm:text-2xl dark:font-light tracking-wide mb-6 dark:text-[#E6E0D4] font-bold">
+            Back-end
+          </h3>
+          <SkillCard title="" skills={backendSkills} />
+        </div>
+
+        <div className="flex flex-col items-center">
+          <h3 className="text-xl sm:text-2xl dark:font-light tracking-wide mb-6 dark:text-[#E6E0D4]">
+            Misc
+          </h3>
+          <SkillCard title="" skills={miscSkills} />
+        </div>
       </div>
     </Section>
-  )
+  );
 }
