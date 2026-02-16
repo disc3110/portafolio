@@ -9,7 +9,7 @@
     "demo": "Live Demo"
   },
   "contact":{
-    "title": "Send me a message!",
+    "title": "Send me a message",
     "name": "Name",
     "email": "Email",
     "message": "Message",
@@ -18,9 +18,9 @@
     "placeholderMessage": "Your message...",
     "mailContact": "Contact me at: ",
     "social": "Or find me here: ",
-    "resume": "ViewResume",
+    "resume": "View Resume",
     "send": "Send Message",
-    "phrase": "Currently open for new opportunities and collaborations. If you wantto work together or just say hi, feel free to reach out!"
+    "phrase": "Currently open for new opportunities and collaborations. If you want to work together or just say hi, feel free to reach out!"
   },
   "sections": {
     "projects": "Projects",
@@ -29,7 +29,7 @@
   },
   "hero_hi": "Hi, I’m Diego",
   "hero_title": "Full-Stack Software Developer",
-  "hero_sub": "Backend-focused Software Developer building full-stack web apps with Node.js, PostgreSQL, and modern frontend tools.",
+  "hero_sub": "Back-end focused Software Developer building full-stack web apps with Node.js, PostgreSQL, and modern frontend tools.",
   "cta_projects": "View Projects",
   "cta_contact": "Say Hi !"
 }

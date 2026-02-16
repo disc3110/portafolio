@@ -3,7 +3,7 @@ export default function Section({ id, title, className, children }) {
     <section
       id={id}
       data-section-title={title || ''}
-      className={`snap-start scroll-mt-24 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 ${className || ''}`}
+      className={`scroll-ms-6 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 ${className || ''}`}
     >
       {title && (
         <div className="mb-8 sm:mb-10">
