@@ -4,7 +4,7 @@ import LanguageToggle from './LanguageToggle'
 import { useT } from '../i18n/i18n.jsx'
 import logo from '../assets/logo.svg'
 
-export default function Navbar() {
+export default function Navbar({ onMenuOpenChange = () => {} }) {
   const [open, setOpen] = useState(false)
   const [dark, setDark] = useState(() => {
     // Default to dark unless user previously chose a theme
@@ -34,17 +34,21 @@ export default function Navbar() {
     setOpen(false)
   }, [pathname])
 
+  useEffect(() => {
+    onMenuOpenChange(open)
+  }, [open, onMenuOpenChange])
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 pt-[env(safe-area-inset-top)] border-b bg-white/80 dark:bg-zinc-900/80 backdrop-blur">
-      <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-14 sm:h-16 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-3 font-bold">
+      <div  className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-14 sm:h-16 flex items-center justify-between">
+        <a href={sectionHref('home')} className="flex items-center gap-3 font-bold">
           <img
             src={logo}
             alt="Logo"
             className="h-8 w-8 object-contain"
           />
           <span>{t.brand}</span>
-        </Link>
+        </a>
 
         <div className="hidden md:flex items-center gap-4">
           <a href={sectionHref('projects')} className="hover:underline">
