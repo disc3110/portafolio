@@ -70,7 +70,7 @@ export default function App() {
     <div className="h-[100svh] flex flex-col overflow-hidden bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
       {showNavbar && <Navbar />}
       {showNavbar && activeSectionTitle && (
-        <div className="fixed left-4 top-4 z-50 pointer-events-none">
+        <div className="fixed left-4 top-[calc(4rem+env(safe-area-inset-top)+0.75rem)] sm:top-[calc(5rem+env(safe-area-inset-top)+0.75rem)] z-50 pointer-events-none">
           <div className="inline-flex items-center gap-2 rounded-2xl border border-zinc-200/60 bg-white/70 px-4 py-2 shadow-lg backdrop-blur transition-all duration-300 ease-out translate-y-0 opacity-100 dark:border-zinc-800/60 dark:bg-zinc-950/60">
             <span className="h-2 w-2 rounded-full bg-zinc-900 dark:bg-zinc-100" />
             <span className="text-sm font-semibold tracking-wide text-zinc-900 dark:text-zinc-100">

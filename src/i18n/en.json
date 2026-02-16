@@ -1,18 +1,35 @@
 {
   "brand": "Diego Solis — Software Developer",
   "nav": {
-    "home": "Home",
-    "about": "About",
     "projects": "Projects",
     "skills": "Skills",
-    "data": "Data",
-    "contact": "Contact",
-    "resumes": "Resumes"
+    "contact": "Contact"
+  },
+  "projects": {
+    "demo": "Live Demo"
+  },
+  "contact":{
+    "title": "Send me a message!",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "placeholderName": "Your name",
+    "placeholderEmail": "Your email",
+    "placeholderMessage": "Your message...",
+    "mailContact": "Contact me at: ",
+    "social": "Or find me here: ",
+    "resume": "ViewResume",
+    "send": "Send Message",
+    "phrase": "Currently open for new opportunities and collaborations. If you wantto work together or just say hi, feel free to reach out!"
+  },
+  "sections": {
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
   },
   "hero_hi": "Hi, I’m Diego",
   "hero_title": "Full-Stack Software Developer",
   "hero_sub": "Backend-focused Software Developer building full-stack web apps with Node.js, PostgreSQL, and modern frontend tools.",
   "cta_projects": "View Projects",
-  "cta_contact": "Say Hi !",
-  "download": "Download"
+  "cta_contact": "Say Hi !"
 }

@@ -6,7 +6,7 @@ import { useT } from '../i18n/i18n' // para saber en qué idioma estás
 
 export default function Contact() {
   const formRef = useRef(null)
-  const { lang } = useT()
+  const { lang , t } = useT()
   const [sent, setSent] = useState(false)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
@@ -52,7 +52,7 @@ export default function Contact() {
   }
 
   return (
-    <Section id="contact" title="Contact">
+    <Section id="contact" title={t.sections.contact || 'Contact'}>
       {sent && <p className="mb-6 text-green-400">Message sent. Thank you!</p>}
       {error && <p className="mb-6 text-red-400">{error}</p>}
 
@@ -60,10 +60,8 @@ export default function Contact() {
         {/* Left: Say Hi card */}
         <div className="bg-[#E6E0D4] text-black rounded-2xl p-8 sm:p-10 flex flex-col justify-between min-h-[420px]">
           <div>
-            <h3 className="text-3xl font-light mb-6">Say Hi!</h3>
             <p className="leading-relaxed opacity-80 mb-8">
-              Currently open for new opportunities and collaborations. If you want
-              to work together or just say hi, feel free to reach out!
+              {t.contact.phrase || 'I’m currently open to new opportunities. Whether you have a question, want to collaborate on a project, or just want to say hi, feel free to reach out!'  }
             </p>
 
             <a
@@ -72,13 +70,13 @@ export default function Contact() {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center bg-black text-[#E6E0D4] px-6 py-2 rounded-md hover:opacity-80 transition"
             >
-              View Resume
+              {t.contact.resume || 'Download Resume'}
             </a>
           </div>
 
           <div className="mt-10 flex items-end justify-between gap-6 flex-wrap">
             <div>
-              <p className="text-sm opacity-70">Contact me at</p>
+              <p className="text-sm opacity-70">{t.contact.mailContact || 'Contact me at'}</p>
               <a
                 href="mailto:disc3110@gmail.com"
                 className="underline underline-offset-4 hover:opacity-70 transition"
@@ -88,7 +86,7 @@ export default function Contact() {
             </div>
 
             <div className="text-right">
-              <p className="text-sm opacity-70 mb-2">Or find me here</p>
+              <p className="text-sm opacity-70 mb-2">{t.contact.social || 'Or find me here'}</p>
               <div className="flex gap-4 text-2xl justify-end">
                 <a
                   href="https://github.com/disc3110"
@@ -132,38 +130,38 @@ export default function Contact() {
           />
 
           <h3 className="text-3xl font-light tracking-wide text-[#E6E0D4] mb-2">
-            Send me a message!
+            {t.contact.title || 'Send me a message!'}
           </h3>
 
           
           <label className="grid gap-1">
-            <span className="text-sm text-[#E6E0D4]/80">Name</span>
+            <span className="text-sm text-[#E6E0D4]/80">{t.contact.name || 'Name'}</span>
             <input
               className="bg-[#E6E0D4] text-black placeholder-black/50 p-3 rounded-xl outline-none focus:ring-2 focus:ring-[#E6E0D4]/40"
               name="from_name"
-              placeholder="Your name"
+              placeholder={t.contact.placeholderName || "Your name"}
               required
             />
           </label>
 
           <label className="grid gap-1">
-            <span className="text-sm text-[#E6E0D4]/80">Email</span>
+            <span className="text-sm text-[#E6E0D4]/80">{t.contact.email || 'Email'}</span>
             <input
               className="bg-[#E6E0D4] text-black placeholder-black/50 p-3 rounded-xl outline-none focus:ring-2 focus:ring-[#E6E0D4]/40"
               type="email"
               name="reply_to"
-              placeholder="Your email"
+              placeholder={t.contact.placeholderEmail || "Your email"}
               required
             />
           </label>
           
 
           <label className="grid gap-1">
-            <span className="text-sm text-[#E6E0D4]/80">Message</span>
+            <span className="text-sm text-[#E6E0D4]/80">{t.contact.message || 'Message'}</span>
             <textarea
               className="bg-[#E6E0D4] text-black placeholder-black/50 p-3 rounded-xl outline-none focus:ring-2 focus:ring-[#E6E0D4]/40"
               name="message"
-              placeholder="Your message..."
+              placeholder={t.contact.placeholderMessage || "Your message..."}
               rows="7"
               required
             />

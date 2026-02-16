@@ -1,6 +1,8 @@
 import { FaGithub } from "react-icons/fa"
+import { useT } from '../i18n/i18n.jsx'
 
 export default function ProjectCard({ title, subtitle, description, tags, links }) {
+  const { t } = useT()
   return (
     <div className="border border-[#2a2a2a] bg-[#0B0B0B] rounded-2xl p-6 flex flex-col h-full hover:shadow-lg transition duration-300">
       
@@ -56,7 +58,7 @@ export default function ProjectCard({ title, subtitle, description, tags, links 
             rel="noreferrer"
             className="px-5 py-2 rounded-xl bg-[#E6E0D4] text-black font-medium hover:opacity-90 transition"
           >
-            Live Demo
+            {t.projects.demo}
           </a>
         )}
       </div>

@@ -1,23 +1,35 @@
 {
-  "brand": "Diego Solís — Software & Data",
+  "brand": "Diego Solis — Desarrollador de Software",
   "nav": {
-    "home": "Inicio",
-    "about": "Acerca",
     "projects": "Proyectos",
     "skills": "Habilidades",
-    "data": "Datos",
-    "contact": "Contacto",
-    "resumes": "CVs"
+    "contact": "Contacto"
   },
-  "hero_hi": "Hola, soy Diego 👋",
-  "hero_title": "Ingeniero de Software (Backend / Full-Stack).",
-  "hero_sub": "Desarrollador de Software enfocado en backend, construyendo aplicaciones web full‑stack con Node.js, PostgreSQL y herramientas modernas de frontend.",
+  "projects": {
+    "demo": "Ver Demo"
+  },
+  "contact": {
+    "title": "¡Envíame un mensaje!",
+    "name": "Nombre",
+    "placeholderName": "Tu nombre",
+    "placeholderEmail": "Tu correo electrónico",
+    "placeholderMessage": "Tu mensaje...",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "mailContact": "Contáctame en:",
+    "social": "O encuéntrame aquí:",
+    "resume": "Ver CV",
+    "send": "Enviar mensaje",
+    "phrase": "Actualmente estoy abierto a nuevas oportunidades y colaboraciones. Si te gustaría trabajar conmigo o simplemente saludar, no dudes en escribirme."
+  },
+  "sections": {
+    "projects": "Projectos",
+    "skills": "Habilidades",
+    "contact": "Contacto"
+  },
+  "hero_hi": "Hola, soy Diego",
+  "hero_title": "Desarrollador Full‑Stack",
+  "hero_sub": "Desarrollador de software enfocado en backend que crea aplicaciones web full‑stack con Node.js, PostgreSQL y herramientas modernas de frontend.",
   "cta_projects": "Ver Proyectos",
-  "cta_contact": "Contáctame",
-  "about_text": "Soy egresado de un Associate en Ciencias de la Computación en Vancouver, BC. Me enfoco en construir aplicaciones web backend y full‑stack, trabajar con bases de datos y diseñar sistemas limpios y mantenibles. Disfruto resolver problemas reales con código, aprender continuamente nuevas tecnologías y colaborar en equipos diversos. Aporto valor adicional como desarrollador bilingüe (Español/Inglés) con sólidas habilidades de comunicación.",
-  "resumes": {
-    "data": "CV — Análisis de Datos",
-    "software": "CV — Ingeniería de Software"
-  },
-  "download": "Descargar"
+  "cta_contact": "Contáctame !"
 }

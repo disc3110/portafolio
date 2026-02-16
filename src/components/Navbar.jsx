@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import LanguageToggle from './LanguageToggle'
 import { useT } from '../i18n/i18n.jsx'
+import logo from '../assets/logo.svg'
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
@@ -14,7 +15,6 @@ export default function Navbar() {
   })
   const { t } = useT()
   const { pathname } = useLocation()
-  const isHome = pathname === '/'
   const sectionHref = (id) => `/#${id}`
 
   useEffect(() => {
@@ -37,8 +37,13 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 pt-[env(safe-area-inset-top)] border-b bg-white/80 dark:bg-zinc-900/80 backdrop-blur">
       <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-14 sm:h-16 flex items-center justify-between">
-        <Link to="/" className="font-bold">
-          {t.brand}
+        <Link to="/" className="flex items-center gap-3 font-bold">
+          <img
+            src={logo}
+            alt="Logo"
+            className="h-8 w-8 object-contain"
+          />
+          <span>{t.brand}</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-4">
@@ -47,6 +52,9 @@ export default function Navbar() {
           </a>
           <a href={sectionHref('contact')} className="hover:underline">
             {t.nav.contact}
+          </a>
+          <a href={sectionHref('skills')} className="hover:underline">
+            {t.nav.skills}
           </a>
           <button
             onClick={() => setDark((d) => !d)}
@@ -69,13 +77,8 @@ export default function Navbar() {
 
       {open && (
         <div className="md:hidden border-t px-4 py-3 flex flex-col gap-3 bg-white dark:bg-zinc-900">
-          <Link to="/">{t.nav.home}</Link>
-          {isHome && (
-            <>
-              <a href={sectionHref('projects')}>{t.nav.projects}</a>
-              <a href={sectionHref('skills')}>{t.nav.skills}</a>
-            </>
-          )}
+          <a href={sectionHref('projects')}>{t.nav.projects}</a>
+          <a href={sectionHref('skills')}>{t.nav.skills}</a>
           <a href={sectionHref('contact')}>{t.nav.contact}</a>
           <div className="flex gap-3">
             <button
