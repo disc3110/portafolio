@@ -1,26 +1,64 @@
-export default function ProjectCard({ title, description, tags, links }) {
+import { FaGithub } from "react-icons/fa"
+import { useT } from '../i18n/i18n.jsx'
+
+export default function ProjectCard({ title, subtitle, description, tags, links }) {
+  const { t } = useT()
   return (
-    <div className="border rounded-2xl p-6 shadow hover:shadow-lg transition">
-      <h3 className="text-xl font-semibold">{title}</h3>
-      <p className="mt-2 text-sm opacity-80">{description}</p>
+    <div className="border border-[#2a2a2a] bg-[#0B0B0B] rounded-2xl p-6 flex flex-col h-full hover:shadow-lg transition duration-300">
+      
+      {/* Content */}
+      <div>
+        <h3 className="text-xl font-semibold text-[#E6E0D4]">
+          {title}
+        </h3>
 
-      {Array.isArray(tags) && tags.length > 0 && (
-        <div className="mt-4 flex flex-wrap gap-2">
-          {tags.map((t) => (
-            <span key={t} className="text-xs border px-2 py-1 rounded-full">{t}</span>
-          ))}
-        </div>
-      )}
+        <h5 className="text-sm opacity-70 mb-2 text-[#E6E0D4]">
+          {subtitle}
+        </h5>
 
-      <div className="mt-4 flex gap-4">
+        <p className="mt-3 text-sm opacity-80 text-[#E6E0D4]">
+          {description}
+        </p>
+
+        {Array.isArray(tags) && tags.length > 0 && (
+          <div className="mt-4 flex flex-wrap gap-2">
+            {tags.map((t) => (
+              <span
+                key={t}
+                className="text-xs border border-[#2a2a2a] px-3 py-1 rounded-full text-[#E6E0D4]"
+              >
+                {t}
+              </span>
+            ))}
+          </div>
+        )}
+      </div>
+
+      {/* Footer (sticks to bottom) */}
+      <div className="mt-auto pt-6 flex items-center justify-between">
+        
+        {/* GitHub icon left */}
         {links?.github && (
-          <a className="underline" href={links.github} target="_blank" rel="noreferrer">
-            GitHub
+          <a
+            href={links.github}
+            target="_blank"
+            rel="noreferrer"
+            className="text-2xl text-[#E6E0D4] hover:opacity-70 transition"
+            aria-label="GitHub"
+          >
+            <FaGithub />
           </a>
         )}
+
+        {/* Demo button right */}
         {links?.demo && (
-          <a className="underline" href={links.demo} target="_blank" rel="noreferrer">
-            Demo
+          <a
+            href={links.demo}
+            target="_blank"
+            rel="noreferrer"
+            className="px-5 py-2 rounded-xl bg-[#E6E0D4] text-black font-medium hover:opacity-90 transition"
+          >
+            {t.projects.demo}
           </a>
         )}
       </div>
